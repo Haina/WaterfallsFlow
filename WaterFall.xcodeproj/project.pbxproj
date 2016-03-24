@@ -16,6 +16,8 @@
 		B54E85B01CA2D562003196F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B54E85AE1CA2D562003196F3 /* LaunchScreen.storyboard */; };
 		B54E85BB1CA2D563003196F3 /* WaterFallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B54E85BA1CA2D563003196F3 /* WaterFallTests.m */; };
 		B54E85C61CA2D563003196F3 /* WaterFallUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = B54E85C51CA2D563003196F3 /* WaterFallUITests.m */; };
+		B5FB5E751CA3C734001847B7 /* WNImageContentTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B5FB5E731CA3C734001847B7 /* WNImageContentTableViewCell.m */; };
+		B5FB5E761CA3C734001847B7 /* WNImageContentTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B5FB5E741CA3C734001847B7 /* WNImageContentTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,9 @@
 		B54E85C11CA2D563003196F3 /* WaterFallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterFallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B54E85C51CA2D563003196F3 /* WaterFallUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WaterFallUITests.m; sourceTree = "<group>"; };
 		B54E85C71CA2D563003196F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B5FB5E721CA3C734001847B7 /* WNImageContentTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WNImageContentTableViewCell.h; sourceTree = "<group>"; };
+		B5FB5E731CA3C734001847B7 /* WNImageContentTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WNImageContentTableViewCell.m; sourceTree = "<group>"; };
+		B5FB5E741CA3C734001847B7 /* WNImageContentTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WNImageContentTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +134,9 @@
 				B54E85A41CA2D562003196F3 /* AppDelegate.m */,
 				B54E85A61CA2D562003196F3 /* ViewController.h */,
 				B54E85A71CA2D562003196F3 /* ViewController.m */,
+				B5FB5E721CA3C734001847B7 /* WNImageContentTableViewCell.h */,
+				B5FB5E731CA3C734001847B7 /* WNImageContentTableViewCell.m */,
+				B5FB5E741CA3C734001847B7 /* WNImageContentTableViewCell.xib */,
 				B54E85A91CA2D562003196F3 /* Main.storyboard */,
 				B54E85AC1CA2D562003196F3 /* Assets.xcassets */,
 				B54E85AE1CA2D562003196F3 /* LaunchScreen.storyboard */,
@@ -176,6 +184,7 @@
 				B54E859A1CA2D562003196F3 /* Frameworks */,
 				B54E859B1CA2D562003196F3 /* Resources */,
 				94A1D9F88D0296829D617C37 /* Copy Pods Resources */,
+				A9B7F4BFD0062F54001FEC4B /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -271,6 +280,7 @@
 			files = (
 				B54E85B01CA2D562003196F3 /* LaunchScreen.storyboard in Resources */,
 				B54E85AD1CA2D562003196F3 /* Assets.xcassets in Resources */,
+				B5FB5E761CA3C734001847B7 /* WNImageContentTableViewCell.xib in Resources */,
 				B54E85AB1CA2D562003196F3 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -322,6 +332,21 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A9B7F4BFD0062F54001FEC4B /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -331,6 +356,7 @@
 			files = (
 				B54E85A81CA2D562003196F3 /* ViewController.m in Sources */,
 				B54E85A51CA2D562003196F3 /* AppDelegate.m in Sources */,
+				B5FB5E751CA3C734001847B7 /* WNImageContentTableViewCell.m in Sources */,
 				B54E85A21CA2D562003196F3 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

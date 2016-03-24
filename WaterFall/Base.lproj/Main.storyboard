@@ -1,22 +1,55 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="agK-2H-ayq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="5dL-RX-c9C"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="WaterFallDemo" id="gYt-U8-cmJ"/>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="p9r-7o-m5d">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="3M8-AV-0Dd"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="mD7-ET-V4a"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="agK-2H-ayq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="FYL-C6-T4i"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="p9r-7o-m5d" secondAttribute="bottom" id="GMI-FK-7Ra"/>
+                            <constraint firstItem="agK-2H-ayq" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Kyt-59-a24"/>
+                            <constraint firstItem="p9r-7o-m5d" firstAttribute="top" secondItem="agK-2H-ayq" secondAttribute="bottom" id="OQQ-fT-L3K"/>
+                            <constraint firstAttribute="trailing" secondItem="p9r-7o-m5d" secondAttribute="trailing" id="aYe-v3-jUd"/>
+                            <constraint firstAttribute="trailing" secondItem="agK-2H-ayq" secondAttribute="trailing" id="nNT-xa-JT4"/>
+                            <constraint firstItem="p9r-7o-m5d" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="oiE-y0-8Ty"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="tableView" destination="p9r-7o-m5d" id="vqX-Kl-mUR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
